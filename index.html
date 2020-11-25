@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicacion web para registro de empleados">
+    <meta name="robots" content="">
+    <meta name="keywords" content="">
+    <title>Registro de Empleados</title>
+    <link rel="icon" href="./img/base-de-datos.png">
+    <!------ GOOGLE FONTS ----->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title"><img src="./img/base-de-datos.png" alt=""> Systems By Id</h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>    
+                        <label>Nombre Completo*</label><label class="validation-error hide" id="fullNameValidationError">Este campo es requerido.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>    
+                        <label>Codigo EMP</label>
+                        <input type="text" name="EMPcode" id="EMPcode">
+                    </div>
+                    <div>    
+                        <label>Salario</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>    
+                        <label>Ciudad</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Nombre Completo</th>
+                            <th>Codigo EMP</th>
+                            <th>Salario</th>
+                            <th>Ciudad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------ SCRIPTS ------>
+    <script src="script.js"></script>
+</body>
+</html>
